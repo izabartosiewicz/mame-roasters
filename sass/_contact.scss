@@ -1,0 +1,77 @@
+.section-contact {
+  position: relative;
+  background-image: url("./img/background-contact.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contact-bg-text {
+    position: absolute;
+    top: -10rem;
+    font-family: $font-secondary;
+    font-size: 50rem;
+    font-weight: 800;
+    z-index: -1;
+  }
+
+  .contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    width: 50%;
+    padding: 5rem;
+    background-image: $color-black;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 0.5px $color-white solid;
+
+    @include respond(tablet-landscape) {
+      width: 70%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+      margin: 1.2rem;
+      padding: 3.2rem;
+    }
+
+    .contact-headline {
+      font-family: $font-secondary;
+      font-size: 5rem;
+      font-weight: 800;
+
+      @include respond(tablet-portret) {
+        font-size: 4.4rem;
+      }
+
+      @include respond(phone) {
+        font-size: 3.6rem;
+      }
+    }
+    .contact-text {
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    .social-media-box {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      svg {
+        width: 4rem;
+        fill: $color-white;
+      }
+
+      svg:hover {
+        fill: $color-beige-darker;
+      }
+    }
+  }
+}

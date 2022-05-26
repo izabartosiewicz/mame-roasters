@@ -1,0 +1,56 @@
+// TYPOGRAPHY system sizes (rem)
+// 1 / 1.2 / 1.4 / 1.6 / 1.8 / 2 / 2.4 / 3 / 3.6 / 4.4 / 5.2 / 6.2 / 7.4 / 8.6 / 9.8
+
+// WHITESPACE system (rem)
+// 0.2 / 0.4 / 0.8 / 1.2 / 1.6 / 2.4 / 3.2 / 4.8 / 6.4 / 8 / 9.6 / 12.8
+
+// COLOR VARIABLES
+$color-white: #ffffff;
+$color-beige: #f4eade;
+$color-beige-darker: #e1d6c8;
+$color-overlay: #423d3663;
+$color-black: #000000;
+
+// FONT VARIABLES
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Mohave', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @include respond(tablet-portret) {
+    font-size: 56.25%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: $color-white;
+    overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+}

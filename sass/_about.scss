@@ -1,0 +1,52 @@
+.section-about {
+  background-image: url("./img/background-about.webp");
+  background-size:cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 50%;
+    padding: 4.8rem;
+    background-image: $color-black;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 0.5px $color-white solid;
+  
+
+    @include respond(tablet-landscape) {
+      width: 70%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+      margin: 1.2rem;
+      padding: 3.2rem;
+    }
+
+    .about-headline {
+      font-family: $font-secondary;
+      font-size: 5.2rem;
+      font-weight: 800;
+      text-align: center;
+
+      @include respond(tablet-portret) {
+        font-size: 4.4rem;
+      }
+
+      @include respond(phone) {
+        font-size: 3.6rem;
+    }
+
+
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}}

@@ -1,0 +1,21 @@
+.section-gallery {
+  background-color: $color-beige;
+  position: relative;
+
+  .gallery-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 10rem;
+    flex-wrap: wrap;
+   
+
+    img {
+      object-fit: cover;
+      width:35rem;
+      height:35rem;
+    }
+  }
+}
+
